@@ -1,0 +1,77 @@
+.xs-nav-tab {
+  float: right;
+  border-bottom: 0 solid #000;
+
+  @media (min-width: 300px) and (max-width: 991px) {
+    float: left;
+  }
+
+  .nav-item {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    margin-bottom: -1px;
+  }
+
+  .nav-link {
+    padding: 0 0 13px;
+    line-height: 1;
+    border: 0;
+    font-size: $default-font-size;
+    color: $gray-drak-4;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    position: relative;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      -webkit-transition: all .4s ease;
+      opacity: 0;
+    }
+
+    &::before {
+      bottom: 0;
+      height: 2px;
+      width: 40px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      background-color: $color-primary;
+      transition: all .4s ease;
+    }
+
+    &::after {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: -11px;
+      z-index: 999;
+      border-top: 8px solid $color-primary;
+      border-bottom: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      transition: all .4s ease;
+    }
+
+    &:hover::after,
+    &:hover::before {
+      opacity: 1;
+    }
+
+    .active {
+      color: $gray-drak-1 !important;
+      background-color: transparent;
+    }
+
+    &:hover {
+      color: $gray-drak-1;
+    }
+  }
+
+  .nav-link.active::after,
+  .nav-link.active::before {
+    opacity: 1;
+  }
+}

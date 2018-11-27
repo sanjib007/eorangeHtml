@@ -1,0 +1,23 @@
+//ABSTRACTS
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//BASE
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+//COMPONENTS
+@import "components/tab";
+@import "components/backtop";
+
+//LAYOUTS
+@import "layout/header";
+@import "layout/footer";
+@import "layout/preloader";
+
+//PAGES
+@import "pages/flashSale";
+@import "pages/home";
+

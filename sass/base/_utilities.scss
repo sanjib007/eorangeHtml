@@ -1,0 +1,132 @@
+.women-overly {
+  background-color: $light-blue !important;
+}
+
+.men-overly {
+  background-color: $light-brown !important;
+}
+
+.mobile-overly {
+  background-color: $dark-blue-1;
+}
+
+.computer-overly {
+  background-color: $dark-blue-2;
+}
+
+.watch-overly {
+  background-color: $light-green;
+}
+
+.letest-border {
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: $gray-light-2;
+  transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
+
+  @media (min-width: 300px) and (max-width: 991px) {
+    border: 0 !important
+  }
+}
+
+.orange {
+  color: $color-primary;
+}
+
+.section-title {
+
+}
+
+.carousel-indicators li {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 100% !important;
+}
+
+.carousel-indicators .active {
+  background-color: $color-primary !important;
+}
+
+.goToTop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  background-color: $color-white;
+  box-shadow: 0 2rem 5rem rgba(0,0,0,.09);
+  padding: 2rem 0;
+}
+
+.goToFlashNav {
+  position: fixed;
+  width: 100%;
+  top: 16%;
+  z-index: 999999;
+  border-top: 1px solid $gray-light-7 !important;
+}
+
+.close-btn {
+  display: none !important;
+}
+
+@media (min-width: 300px) and (max-width: 991px) {
+  .w-75 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .d-xs-none {
+    display: none !important;
+  }
+}
+
+
+.slideleft:after{
+  top: 0;
+  z-index: -1;
+  transform: translate3D(-101%,0,0);
+}
+
+.slideleft:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+// CUSTOMIZATION OF BOOTSTRAP DEFAULT COLUMN PADDING
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+  outline:0px !important;
+  -webkit-appearance:none;
+}
+
+.mb-xs-5 {
+  margin-bottom: 3rem!important;
+}
+
+ul {
+  list-style: none !important;
+  margin: 0 !important;
+}
+
+
+.container-fluid {
+  width: 90% !important;
+}
+

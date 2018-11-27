@@ -1,0 +1,25 @@
+.scrollup {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 56px;
+  right: 30px;
+  background-color: $color-primary;
+  color: $color-white;
+  background-position: center;
+  z-index: 999;
+  display: none;
+  text-align: center;
+  transition: all .4s ease;
+
+  .fa {
+    transition: all .4s ease;
+  }
+
+  &:hover .fa {
+    font-size: $default-font-size;
+    color: $color-white;
+  }
+}

@@ -1,0 +1,49 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin vh-enter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*==========================================================================
+    MEDIA QUERY MANAGER (1em = 16px)
+===========================================================================*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == small-phone-min {
+        @media only screen and (min-width: 35.94em) { @content };    //575px
+    }
+    @if $breakpoint == small-phone-max {
+        @media only screen and (max-width: 36em) { @content };    //576px
+    }
+    @if $breakpoint == phone-min {
+        @media only screen and (min-width: 47.94em) { @content };    //767px
+    }
+    @if $breakpoint == phone-max {
+        @media only screen and (max-width: 48em) { @content };    //768px
+    }
+    @if $breakpoint == tab-port-min {
+        @media only screen and (min-width: 61.94em) { @content };     //991px
+    }
+    @if $breakpoint == tab-port-max {
+        @media only screen and (max-width: 62em) { @content };     //992px
+    }
+    @if $breakpoint == tab-land-min {
+        @media only screen and (min-width: 74.94em) { @content };    //1199px
+    }
+    @if $breakpoint == tab-land-max {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+}
+
